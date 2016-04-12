@@ -22,6 +22,11 @@ window.onload=function(){
 
     setTimeout(playBGM,43);
 
+    var canvas=document.getElementById("canvas");
+    canvas.onclick=function(){
+        document.getElementById("player").play();
+    };
+
     WINDOW_HEIGHT=document.body.clientHeight;
     WINDOW_WIDTH=document.body.clientWidth;
     MARGIN_LEFT=Math.round(WINDOW_WIDTH/10);
